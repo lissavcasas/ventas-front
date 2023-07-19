@@ -1,0 +1,28 @@
+<p>listar-cliente works!</p>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Tipo de documento</th>
+            <th>Numero de documento</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Fecha de nacimiento</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clientes">
+            <td>{{cliente.idCliente}}</td>
+            <td>{{cliente.idTipoDoc.descripcion }}</td>
+            <td>{{cliente.numDocumento}}</td>
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.apePat}}</td>
+            <td>{{cliente.apeMat}}</td>
+            <td>{{cliente.fecNacimiento}}</td>
+            <td>{{cliente.email}}</td>
+        </tr>
+    </tbody>
+</table>
